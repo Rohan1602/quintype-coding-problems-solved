@@ -1,14 +1,18 @@
 <html>
   <head>
     <title>Quintype App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/style.css" type="text/css"/>
     <script type="text/javascript" src="/assets/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/diamond-solve.js"></script>
   </head>
   <body>
     <div id="container">
       <div>
         <div class="messages"></div>
-        <table class="diamondsweeper-board">
+        <table class="table diamondsweeper-board">
           <tbody>
             <tr>
               <td><div class="cell unknown"></div></td>
@@ -17,7 +21,17 @@
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+            </tr>
+            <tr>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
             </tr>
             <tr>
@@ -27,46 +41,6 @@
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell arrow"></div></td>
-              <td><div class="cell unknown"></div></td>
-            </tr>
-            <tr>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
             </tr>
@@ -75,20 +49,50 @@
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
-              <td><div class="cell diamond"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown" ></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+            </tr>
+            <tr>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
             </tr>
             <tr>
               <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
               <td><div class="cell unknown"></div></td>
-              <td><div class="cell"></div></td>
-              <td><div class="cell"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+            </tr>
+            <tr>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+            </tr>
+            <tr>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
+              <td><div class="cell unknown"></div></td>
             </tr>
           </tbody>
         </table>
